@@ -1,5 +1,6 @@
-import 'tailwindcss/tailwind.css'
-import Layout from '../components/Layout'
+import 'tailwindcss/tailwind.css';
+import Layout from '../components/Layout';
+import withData from "../lib/apollo";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,4 +10,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default withData(MyApp);
