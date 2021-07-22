@@ -1,11 +1,12 @@
 
+import Ttile from "../../components/Title";
 import TutorList from "../../components/TutorList"
 
 const Tutors = () => {
     return ( 
         <div>
-            <h1>Tutors</h1>
-            <div className="h-48 bg-green">
+            <Ttile title="Tutors"/>
+            <div className="my-10 ">
                 <TutorList />
             </div>
             

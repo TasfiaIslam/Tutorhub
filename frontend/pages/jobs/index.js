@@ -1,7 +1,9 @@
+import Ttile from "../../components/Title"
+
 const Jobs = () => {
     return ( 
         <div>
-            <h1>Jobs</h1>
+            <Ttile title="Jobs" />
         </div>
      );
 }
