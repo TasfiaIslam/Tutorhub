@@ -1,19 +1,20 @@
 import useFetch from "../../hooks/useFetch";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-export default function TutorList ()  {
-    const { loading, error, data } = useFetch('http://localhost:1337/tutors');
+export default function TutorList ({ tutors })  {
+    // const { loading, error, data } = useFetch('http://localhost:1337/tutors');
+    // if (error){
+    //     return(
+    //         <div>Error</div>
+    //     )
+    // }
+    // if (loading){
+    //     return(
+    //         <div>Loading</div>
+    //     )
+    // }
+
     const imgPath = "http://localhost:1337";
-    if (error){
-        return(
-            <div>Error</div>
-        )
-    }
-    if (loading){
-        return(
-            <div>Loading</div>
-        )
-    }
     
     return(
         <div>
@@ -26,7 +27,7 @@ export default function TutorList ()  {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                        {data.map( tutor => (
+                        {tutors.map( tutor => (
                             <tr key={tutor.id} >
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <div class="flex items-center">
@@ -54,30 +55,3 @@ export default function TutorList ()  {
         </div>
     )  
 }
-
-
-// export async function getStaticProps() {
-
-//     const client = new ApolloClient({
-//         uri: "http://localhost:1337/graphql",
-//         cache: new InMemoryCache(),
-//     });
-
-//     const { data } = await client.query({
-//       query: gql`
-//         query Tutors {
-//           tutors {
-//             name
-//             email
-//             about
-//           }
-//         }
-//       `,
-//     });
-
-//     return {
-//       props: {
-//         tutors: data.tutors,
-//       },
-//    };
-// }

@@ -1,17 +1,16 @@
-import useFetch from "../../hooks/useFetch";
 
-export default function StudentList ()  {
-    const { loading, error, data } = useFetch('http://localhost:1337/students');
-    if (error){
-        return(
-            <div>Error</div>
-        )
-    }
-    if (loading){
-        return(
-            <div>Loading</div>
-        )
-    }
+export default function StudentList ({students})  {
+    // const { loading, error, data } = useFetch('http://localhost:1337/students');
+    // if (error){
+    //     return(
+    //         <div>Error</div>
+    //     )
+    // }
+    // if (loading){
+    //     return(
+    //         <div>Loading</div>
+    //     )
+    // }
     
     return(
         <div>
@@ -24,7 +23,7 @@ export default function StudentList ()  {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                        {data.map( student => (
+                        {students.map( student => (
                             <tr key={student.id} >
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <div class="flex items-center">
