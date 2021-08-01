@@ -1,14 +1,14 @@
-import Ttile from "./Title";
+import Title from "./Title";
 
-const Main = () => {
+const Main = ({ tutors, students, jobs }) => {
     return ( 
         <div>
-            <Ttile title="Dashboard" />
+            <Title title="Dashboard" />
             <div className="my-10 grid grid-cols-4 gap-4 relative">
                 <div className="h-48 bg-white rounded-lg flex flex-col relative">
                     <div className="w-3/4 mx-auto mt-6">
                         <h1 className="text-xl mb-2">Tutors</h1>
-                        <p className="text-sm text-gray-500 mb-2">Total tutors - 400</p>
+                        <p className="text-sm text-gray-500 mb-2">Total tutors - {tutors.length}</p>
                         <p className="text-sm text-gray-500">Lorem Ipsum</p>
                     </div>
                     <div className="absolute -top-4 left-6 rounded-full bg-red-300 h-8 w-8 flex justify-center items-center">
@@ -20,7 +20,7 @@ const Main = () => {
                 <div className="h-48 bg-white rounded-lg flex flex-col relative">
                     <div className="w-3/4 mx-auto mt-6">
                         <h1 className="text-xl mb-2">Students</h1>
-                        <p className="text-sm text-gray-500 mb-2">Total Students - 400</p>
+                        <p className="text-sm text-gray-500 mb-2">Total Students - {students.length}</p>
                         <p className="text-sm text-gray-500">Lorem Ipsum</p>
                     </div>
                     <div className="absolute -top-4 left-6 rounded-full bg-green-300 h-8 w-8 flex justify-center items-center">
@@ -32,7 +32,7 @@ const Main = () => {
                 <div className="h-48 bg-white rounded-lg flex flex-col relative">
                     <div className="w-3/4 mx-auto mt-6">
                         <h1 className="text-xl mb-2">Jobs</h1>
-                        <p className="text-sm text-gray-500 mb-2">Total jobs - 400</p>
+                        <p className="text-sm text-gray-500 mb-2">Total jobs - {jobs.length}</p>
                         <p className="text-sm text-gray-500">Lorem Ipsum</p>
                     </div>
                     <div className="absolute -top-4 left-6 rounded-full bg-blue-300 h-8 w-8 flex justify-center items-center">

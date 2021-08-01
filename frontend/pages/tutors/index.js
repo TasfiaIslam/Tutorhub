@@ -1,4 +1,4 @@
-import Ttile from "../../components/Title";
+import Title from "../../components/Title";
 import TutorList from "../../components/TutorList"
 
 export const getStaticProps = async () => {
@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
 const Tutors = ( { tutors }) => {
     return ( 
         <div>
-            <Ttile title="Tutors"/>
+            <Title title="Tutors"/>
             <div className="my-10 ">
                 <TutorList tutors={ tutors } />
             </div>

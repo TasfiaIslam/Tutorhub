@@ -1,17 +1,4 @@
-
-export default function StudentList ({students})  {
-    // const { loading, error, data } = useFetch('http://localhost:1337/students');
-    // if (error){
-    //     return(
-    //         <div>Error</div>
-    //     )
-    // }
-    // if (loading){
-    //     return(
-    //         <div>Loading</div>
-    //     )
-    // }
-    
+export default function StudentList ({students})  { 
     return(
         <div>
             <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
