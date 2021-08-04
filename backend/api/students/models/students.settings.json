@@ -43,6 +43,10 @@
         "Commerce",
         "Arts"
       ]
+    },
+    "jobs": {
+      "via": "student",
+      "collection": "jobs"
     }
   }
 }

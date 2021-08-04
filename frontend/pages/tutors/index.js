@@ -16,7 +16,7 @@ const Tutors = ( { tutors }) => {
     return ( 
         <div>
             <Title title="Tutors"/>
-            <div className="my-10 ">
+            <div className="mt-10">
                 <TutorList tutors={ tutors } />
             </div>
             

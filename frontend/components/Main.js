@@ -43,8 +43,8 @@ const Main = ({ tutors, students, jobs }) => {
                 </div>
                 <div className="h-48 bg-white rounded-lg flex flex-col relative">
                     <div className="w-3/4 mx-auto mt-6">
-                        <h1 className="text-xl mb-2">Jobs</h1>
-                        <p className="text-sm text-gray-500 mb-2">Total jobs - 400</p>
+                        <h1 className="text-xl mb-2">Assigned Jobs</h1>
+                        <p className="text-sm text-gray-500 mb-2">Total jobs - 100</p>
                         <p className="text-sm text-gray-500">Lorem Ipsum</p>
                     </div>
                     <div className="absolute -top-4 left-6 rounded-full bg-yellow-300 h-8 w-8 flex justify-center items-center">

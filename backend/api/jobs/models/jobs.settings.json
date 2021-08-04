@@ -12,23 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "class": {
-      "type": "string"
-    },
-    "medium": {
-      "type": "string"
-    },
-    "area": {
-      "type": "string"
-    },
     "salary": {
       "type": "biginteger"
     },
     "days": {
       "type": "integer"
     },
-    "subjects": {
-      "type": "richtext"
+    "student": {
+      "model": "students",
+      "via": "jobs"
     }
   }
 }

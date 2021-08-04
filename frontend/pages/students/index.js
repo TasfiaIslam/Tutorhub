@@ -17,7 +17,9 @@ const Students = ({students}) => {
     return ( 
         <div>
             <Ttile title="Students" />
-            <StudentList students={students} />
+            <div className="mt-10">
+                <StudentList students={students} />
+            </div>
         </div>
      );
 }

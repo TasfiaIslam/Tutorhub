@@ -22,31 +22,31 @@ export default function TutorList ({ tutors })  {
                 <table className="min-w-full table-auto divide-y divide-gray-200 " >
                     <thead className="bg-gray-50">
                         <tr className="text-left text-gray-500 uppercase tracking-wider text-xs font-medium">
-                            <th>Name</th>
-                            <th>About</th>
+                            <th className="py-4 px-2 border">Name</th>
+                            <th className="py-4 px-2">About</th>
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
                         {tutors.map( tutor => (
                             <tr key={tutor.id} >
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                    <div class="flex-shrink-0 h-10 w-10">
-                                        <img class="h-10 w-10 rounded-full"
+                                <td className="p-2 border whitespace-nowrap">
+                                    <div className="flex items-center">
+                                    <div className="flex-shrink-0 h-10 w-10">
+                                        <img className="h-10 w-10 rounded-full"
                                         src={imgPath+tutor.photo.url}
                                         alt="" />
                                     </div>
-                                    <div class="ml-4">
-                                        <div class="text-sm font-medium text-gray-900">
+                                    <div className="ml-4">
+                                        <div className="text-sm font-medium text-gray-900">
                                             {tutor.name}
                                         </div>
-                                        <div class="text-sm text-gray-500">
+                                        <div className="text-sm text-gray-500">
                                             {tutor.email}
                                         </div>
                                     </div>
                                     </div>
                                 </td>
-                                <td>{tutor.about}</td>
+                                <td className="p-2">{tutor.about}</td>
                             </tr>
                         ))}
                     </tbody>
