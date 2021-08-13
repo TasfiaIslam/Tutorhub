@@ -2,17 +2,6 @@ import useFetch from "../../hooks/useFetch";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export default function TutorList ({ tutors })  {
-    // const { loading, error, data } = useFetch('http://localhost:1337/tutors');
-    // if (error){
-    //     return(
-    //         <div>Error</div>
-    //     )
-    // }
-    // if (loading){
-    //     return(
-    //         <div>Loading</div>
-    //     )
-    // }
 
     const imgPath = "http://localhost:1337";
     
